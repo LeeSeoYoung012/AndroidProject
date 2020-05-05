@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="60dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/sokkobchingu"
+                    android:text="COFFEE"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onAmericanoClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/americano" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onEspressoClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/espresso" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="아메리카노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="에스프레소"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4100"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView122"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="3900"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCaffeLatteClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/caffe_latte" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCaffeMochaClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/caffe_mocha" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="카페라떼"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="카페모카"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView133"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4300"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView144"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCappuccinoClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/cappuccino" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onMacchiatoClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/caramel_macchiato" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="카푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="카라멜 마끼아또"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView155"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4300"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView166"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/textView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/sokkobchingu"
+                    android:text="FRAPPUCCINO"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton21"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onVanillaFClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/vanilla_cream_frappuccino" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton22"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onGreenFClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/green_tea_cream_frappuccino" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="바닐라 크림 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="그린티 크림 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView211"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5900"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView222"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5700"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton23"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onJavaFClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/java_chip_frappuccino" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton24"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onEspressoFClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/espresso_frappuccino" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="자바칩 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="에스프레소 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView233"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6100"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView244"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5300"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton25"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onStrawberriesFClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/strawberries_frappuccino" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton26"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onMochaFClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/mocha_frappuccino" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="스트로베리 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="모카 프라푸치노"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView255"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6500"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView266"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5900"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/textView03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/sokkobchingu"
+                    android:text="BLENDED"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton31"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onAvocadoClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/avocado_blended" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton32"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChchoBananaClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/chocolate_banana_blended" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="아보카도 블렌디드"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="초코바나나 블렌디드"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView311"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5900"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView322"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6100"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton33"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onGreanBananaClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/green_tea_banana_blended" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton34"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onMangoBananaClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/mango_banana_blended" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="녹차바나나 블렌디드"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="망고바나나 블렌디드"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView333"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6100"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView344"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6300"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton35"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onStrawberryPeachClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/strawberry_peach_blended" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="딸기복숭아 블렌디드"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView355"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="6500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/textView04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/sokkobchingu"
+                    android:text="TEA"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton41"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChaiClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/chai_brewed_tea" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton42"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChamomileClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/chamomile_blend_brewed_tea" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="차이 티"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="민트 블렌드 티"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView411"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4300"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView422"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4100"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton43"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onGreenClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/jeju_organic_green_tea" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton44"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onGrapefruitClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/grapefruit_honey_black_tea" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="제주 유기 녹차"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="자몽 허니 블랙 티"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView433"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4900"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView444"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton45"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onEarlgreyClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/earl_grey_brewed_tea" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton46"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChamomileClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/chamomile_blend_brewed_tea" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="얼그레이 티"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="캐모마일 블렌드 티"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView455"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4100"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView466"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/textView05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/sokkobchingu"
+                    android:text="BAKERY"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton51"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onAlmondCroissantClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/almond_valley_croissant" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton52"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onBlueberryBagelClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/blueberry_bagel" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="아몬드밸리 크루아상"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="블루베리 베이글"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView511"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5400"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView522"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4800"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton53"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCheeseDanishClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/cheese_danish" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton54"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onClassicSconeClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/classic_scone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="치즈 데니쉬"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="클래식 스콘"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView533"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5300"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView544"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton55"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChocolateMuffinClicked"
+                        android:paddingLeft="10dp"
+                        app:srcCompat="@drawable/dark_chocolate_chip_muffin" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton56"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onLeafPieClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/leaf_pie" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="초콜릿칩 머핀"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="리프 파이"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView555"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="3800"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/textView566"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4200"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button001"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button002"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onPaymentIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button003"
+        app:layout_constraintStart_toEndOf="@+id/button001"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button003"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button004"
+        app:layout_constraintStart_toEndOf="@+id/button002" />
+
+    <Button
+        android:id="@+id/button004"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onMypageIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button005"
+        app:layout_constraintStart_toEndOf="@+id/button003"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button005"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onSettingIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button004"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button000"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="600dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginStart="140dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button006"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="91dp"
+        android:background="@drawable/cart"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+
+
+</android.support.constraint.ConstraintLayout>

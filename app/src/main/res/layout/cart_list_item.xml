@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:id="@+id/numtxt"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/changeButton"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/sokkobchingu"
+            android:text="Size" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="205dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/sokkobchingu" />
+
+        <Button
+            android:id="@+id/buttonm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginEnd="-138dp"
+            android:layout_toStartOf="@+id/numtxt"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/numtxt"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttond"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/sokkobchingu"
+            android:text="삭제" />
+
+        <Button
+            android:id="@+id/buttono"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toStartOf="@+id/buttond"
+            android:fontFamily="@font/sokkobchingu"
+            android:text="주문" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

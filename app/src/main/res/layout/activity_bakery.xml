@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".BakeryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="55dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/sokkobchingu"
+            android:text="BAKERY"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onAlmondCroissantClicked"
+                        app:srcCompat="@drawable/almond_valley_croissant"
+                        android:paddingLeft="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onBlueberryBagelClicked"
+                        app:srcCompat="@drawable/blueberry_bagel"
+                        android:paddingRight="10dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="38dp"
+                        android:layout_alignParentLeft="true">
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="아몬드밸리 크루아상"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="블루베리 베이글"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5400"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4800"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCheeseDanishClicked"
+                        app:srcCompat="@drawable/cheese_danish"
+                        android:paddingLeft="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onClassicSconeClicked"
+                        app:srcCompat="@drawable/classic_scone"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="치즈 데니쉬"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="클래식 스콘"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="5300"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4500"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onChocolateMuffinClicked"
+                        app:srcCompat="@drawable/dark_chocolate_chip_muffin"
+                        android:paddingLeft="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onLeafPieClicked"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/leaf_pie"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="초콜릿칩 머핀"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="190dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="리프 파이"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="3800"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="190dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sokkobchingu"
+                        android:text="4200"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button001"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button002"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onPaymentIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button003"
+        app:layout_constraintStart_toEndOf="@+id/button001"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button003"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button004"
+        app:layout_constraintStart_toEndOf="@+id/button002"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <Button
+        android:id="@+id/button004"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onMypageIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button005"
+        app:layout_constraintStart_toEndOf="@+id/button003"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button005"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onSettingIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button004"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button000"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="600dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginStart="140dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/button006"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="91dp"
+        android:background="@drawable/cart"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+</android.support.constraint.ConstraintLayout>

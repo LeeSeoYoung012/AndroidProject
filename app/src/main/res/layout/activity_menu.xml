@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button001"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button002"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onPaymentIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button003"
+        app:layout_constraintStart_toEndOf="@+id/button001"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button003"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button004"
+        app:layout_constraintStart_toEndOf="@+id/button002"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button004"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onMypageIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button005"
+        app:layout_constraintStart_toEndOf="@+id/button003"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button005"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="595dp"
+        android:background="@android:color/transparent"
+        android:onClick="onSettingIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button004"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button000"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="600dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginStart="140dp"
+        android:background="@android:color/transparent"
+        android:onClick="onHomeIconClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button006"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="91dp"
+        android:background="@drawable/cart"
+        android:onClick="onCartIconClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sokkobchingu"
+            android:gravity="center_horizontal"
+            android:text="주문하기"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button000" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/menu1"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onAllClicked"
+            android:text="ALL"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/menu2"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onCoffeeClicked"
+            android:text="COFFEE"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/menu3"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onFrappuccinoClicked"
+            android:text="FRAPPUCCINO"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/menu4"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onBlendedClicked"
+            android:text="BLENDED"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/menu5"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onTeaClicked"
+            android:text="TEA"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/menu6"
+            android:fontFamily="@font/sokkobchingu"
+            android:onClick="onBakeryClicked"
+            android:text="BAKERY"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
