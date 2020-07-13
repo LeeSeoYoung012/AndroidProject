@@ -7,5 +7,6 @@ I have created a Cafe Ordering App that allows you to order directly through an 
 There are various functions such as logging in, signing up, ordering, shopping cart, setting up, My Page etc...
 
 
-# Demo (click gif file below if you want to watch full version video.)
+# Demo 
+(click gif file below if you want to watch full version video.)
 [![cafesss_video](https://user-images.githubusercontent.com/60209292/87304426-c4056e80-c54f-11ea-96e4-34fc3afa73a9.gif)](https://youtu.be/G1nLca-uMS0)
